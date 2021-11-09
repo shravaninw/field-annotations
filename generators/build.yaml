@@ -1,16 +1,25 @@
 targets:
   $default:
     builders:
-      generators|annotations:
+      generators|annotations|defaultvalue:
         enabled: true
 
 builders:
   generators:
     target: ":generators"
     import: "package:generators/builder.dart"
-    builder_factories: ["generateOperation",]
+    builder_factories: ["generateOperation"]
     build_extensions: { ".dart": [".g.dart",] }
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]
+  defaultvalue:
+    target: ":generators"
+    import: "package:generators/builder.dart"
+    builder_factories: [ "generateDefaultValue" ]
+    build_extensions: { ".dart": [ ".o.dart", ] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: [ "source_gen|combining_builder" ]
+
 

@@ -5,8 +5,6 @@ import 'package:source_gen/source_gen.dart';
 
 import 'model_visitor.dart';
 
-final _checker = const TypeChecker.fromRuntime(DefaultValue);
-
 class OperatorGenerator extends GeneratorForAnnotation<OperationAnnotation> {
   @override
   String generateForAnnotatedElement(
@@ -31,43 +29,8 @@ class OperatorGenerator extends GeneratorForAnnotation<OperationAnnotation> {
     if (divison == true)
       classBuffer.writeln('int  div (int a ,int b) => a / b   ;');
 
-    _generateSetters(element as ClassElement, annotation, classBuffer);
-
     classBuffer.writeln('}');
 
     return classBuffer.toString();
   }
-
-  String _generateSetters(ClassElement element, ConstantReader annotation,
-      StringBuffer classBuffer) {
-    for (final f in element.accessors) {
-      if (f.metadata.isEmpty) {
-        return null;
-      }
-
-      final annotate = f.DefaultValueAnnotation;
-      if (f.isGetter) {
-        final value =
-            annotate.computeConstantValue().getField('value').toIntValue();
-
-        classBuffer.writeln('@override');
-        classBuffer.writeln("${f.type.returnType} get ${f.name} => $value;");
-      }
-    }
-  }
-}
-
-extension _ElementAnnotationUtils on ElementAnnotation {
-  bool get isDefaultValue {
-    var displayString =
-        computeConstantValue().type.getDisplayString(withNullability: false);
-    return isConstantEvaluated && displayString == '$DefaultValue';
-  }
-}
-
-extension _PropertyAccessorElementUtils on PropertyAccessorElement {
-  ElementAnnotation get DefaultValueAnnotation => metadata.firstWhere(
-        (e) => e.isDefaultValue,
-        orElse: () => null,
-      );
 }

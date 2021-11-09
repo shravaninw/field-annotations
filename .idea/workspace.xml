@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c6cbbf0-66b9-4d11-bce1-1ef79abca4de" name="Default Changelist" comment="">
+    <list default="true" id="6c6cbbf0-66b9-4d11-bce1-1ef79abca4de" name="Default Changelist" comment="operator">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/lib/src/deafult_value.dart" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/lib/src/deafult_value.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example" beforeDir="false" afterPath="$PROJECT_DIR$/example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/operators.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/operators.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/operators.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generators/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/generators/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generators/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/generators/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generators/build.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/generators/build.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generators/lib/builder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/generators/lib/builder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generators/lib/src/default_generator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/generators/lib/src/default_generator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generators/lib/src/operators_generators.dart" beforeDir="false" afterPath="$PROJECT_DIR$/generators/lib/src/operators_generators.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/example" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20d0KyplrIASJ0gw1lieRLAOrIu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,7 +41,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
